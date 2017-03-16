@@ -8,7 +8,9 @@ public class Rakendus {
     String tervitusfunktsioon() {
         return "Ahoi!";
     }
-
+    String keskmine(String sisend){
+		return sisend;
+	}
    public static void main(String[] args) {
       Rakendus r=new Rakendus();
       System.out.println(r.tervitusfunktsioon());   

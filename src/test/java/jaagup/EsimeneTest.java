@@ -21,4 +21,10 @@ public class EsimeneTest{
 		assertEquals("5", r.keskmine("5"));
 		assertEquals("6", r.keskmine("6"));
 	}
+	@Test
+	public void keskmiseTest2(){
+		Rakendus r=new Rakendus();
+		assertEquals("tyhi sisend", r.keskmine(""));
+		assertEquals("sisend puudub", r.keskmine(null));
+	}
 }
